@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MLQ (Melique) Editor</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- include libraries Query -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/math.css?v=16464">
+  <link rel="stylesheet" href="css/skeleton.css?v=16464">
+  <link rel="stylesheet" href="css/normalize.css?v=16464">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    iframe.editor {
+	padding: 0px !important;
+	margin: 0px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <iframe class="editor" src="matheditor.html?v=1" width="1200px" height="500px" style="margin: 0; padding: 0;"></iframe>
+    <p class="link">Press "Copy Link" and share your math equation.</p>
+    <p>You can also use <a href="https://tinyurl.com/app" target="_blank">TinyURL</a> to shorten this lengthy URL if you find it inconvenient.</p>
+    <button id="insmath" class="button button-primary">Insert Math</button>
+    <div class="msword">
+      <h4>How to copy to MS Word</h4>
+      <ol>
+        <li>Click on the "Copy MathML" button above and select "Paste Special..." in MS Word:<br>
+          <img src="img/mlq1.png" class="screen_shot" />
+        </li>
+        <li>Select option "Unformatted Unicode Text":<br>
+          <img src="img/mlq2.png" class="screen_shot" />
+        </li>
+        <li>The math should appear like this:<br>
+          <img src="img/mlq3.png" class="screen_shot" />
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+
+</html>

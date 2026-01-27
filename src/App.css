@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Oswald";
+  src: url(/src/assets/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+} */
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url(/src/assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 138, 252, 0.1) 27.64%,
+    rgba(136, 91, 255, 0.1) 43.42%,
+    rgba(212, 23, 247, 0.1) 58.83%,
+    rgba(246, 173, 109, 0.1) 81.81%
+  );
+}
+
+h1 {
+  background: linear-gradient(
+    286.95deg,
+    #ffeb3a 0,
+    #de0ef6 36.46%,
+    #885bff 68.62%,
+    #0d97fb 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+@font-face {
+  font-family: 'Latin Modern Math';
+  src: url('./assets/fonts/LatinModernMath-Regular.woff2') format('woff2'),
+       url('./assets/fonts/LatinModernMath-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+math, mi, mo, mn, ms, mtext {
+  font-family: 'Latin Modern Math', serif !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  display: inline-block;
+}
+
+math {
+  display: math; /* Ensures correct spacing */
+}
+
+mo {
+  margin: 0 0.2em; /* Adjust space around operators */
+}
+
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+} */

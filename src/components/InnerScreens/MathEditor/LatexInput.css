@@ -1,0 +1,27 @@
+/* math, msqrt, mfrac {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+/* msqrt {
+  position: relative;
+} */
+
+/* msqrt mi {
+  font-size: 1.5em; 
+} */
+
+/* mfrac {
+  position: relative;
+} */
+
+/* mfrac mi {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+/* mfrac {
+  border-top: 1px solid #000; 
+  padding-top: 3px;
+  padding-bottom: 3px; 
+} */
