@@ -759,12 +759,65 @@ const handleKeyDown = (event) => {
             <Grid2 container spacing={1}>
               {/* Logo */}
               <Grid2 item>
-                <Box>
-                  <img
-                    className="logo"
-                    src={`${process.env.PUBLIC_URL}/math/img/mlq_logo.svg`}
-                    alt="Logo"
-                    style={{ width: '70px', height: '60px' }}
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    height: "75px",
+                    paddingLeft: "10px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "baseline",
+                      cursor: "pointer",
+                      transition: "all 0.3s ease",
+                      padding: "2px 8px",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                        filter: "drop-shadow(0px 0px 10px rgba(0, 229, 255, 0.6))",
+                      }
+                    }}
+                  >
+                    <Box
+                      component="span"
+                      sx={{
+                        fontFamily: "'Latin Modern Math', Georgia, serif",
+                        fontSize: "36px",
+                        fontStyle: "italic",
+                        color: "#ffffff",
+                        lineHeight: 1,
+                        userSelect: "none",
+                      }}
+                    >
+                      G
+                    </Box>
+                    <Box
+                      component="span"
+                      sx={{
+                        fontFamily: "'Latin Modern Math', Georgia, serif",
+                        fontSize: "22px",
+                        fontStyle: "italic",
+                        color: "#00e5ff",
+                        marginLeft: "1px",
+                        lineHeight: 1,
+                        transform: "translateY(4px)",
+                        display: "inline-block",
+                        userSelect: "none",
+                      }}
+                    >
+                      B
+                    </Box>
+                  </Box>
+                  <Box
+                    sx={{
+                      width: "1.5px",
+                      height: "35px",
+                      background: "linear-gradient(to bottom, rgba(0, 229, 255, 0) 0%, rgba(0, 229, 255, 0.4) 50%, rgba(0, 229, 255, 0) 100%)",
+                      marginLeft: "18px",
+                      marginRight: "8px",
+                    }}
                   />
                 </Box>
               </Grid2>
